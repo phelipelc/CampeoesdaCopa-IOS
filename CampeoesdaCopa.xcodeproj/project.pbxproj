@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6E4702FE20CED0FA00E71EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4702FD20CED0FA00E71EFA /* AppDelegate.swift */; };
-		6E47030020CED0FA00E71EFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4702FF20CED0FA00E71EFA /* ViewController.swift */; };
 		6E47030320CED0FA00E71EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E47030120CED0FA00E71EFA /* Main.storyboard */; };
 		6E47030620CED0FA00E71EFA /* CampeoesdaCopa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E47030420CED0FA00E71EFA /* CampeoesdaCopa.xcdatamodeld */; };
 		6E47030820CED0FD00E71EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E47030720CED0FD00E71EFA /* Assets.xcassets */; };
 		6E47030B20CED0FD00E71EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E47030920CED0FD00E71EFA /* LaunchScreen.storyboard */; };
 		6E47031620CED0FD00E71EFA /* CampeoesdaCopaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E47031520CED0FD00E71EFA /* CampeoesdaCopaTests.swift */; };
 		6E47032120CED0FD00E71EFA /* CampeoesdaCopaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E47032020CED0FD00E71EFA /* CampeoesdaCopaUITests.swift */; };
+		6E47033020CED19E00E71EFA /* Bandeiras in Resources */ = {isa = PBXBuildFile; fileRef = 6E47032F20CED19E00E71EFA /* Bandeiras */; };
+		6E47033420CED23F00E71EFA /* WinnersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E47033320CED23F00E71EFA /* WinnersTableViewController.swift */; };
+		6E47033620CED25900E71EFA /* WordlCupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E47033520CED25900E71EFA /* WordlCupViewController.swift */; };
+		6E47033920CED29600E71EFA /* WorldCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E47033820CED29600E71EFA /* WorldCup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		6E4702FA20CED0FA00E71EFA /* CampeoesdaCopa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampeoesdaCopa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4702FD20CED0FA00E71EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E4702FF20CED0FA00E71EFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E47030220CED0FA00E71EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E47030520CED0FA00E71EFA /* CampeoesdaCopa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CampeoesdaCopa.xcdatamodel; sourceTree = "<group>"; };
 		6E47030720CED0FD00E71EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		6E47031C20CED0FD00E71EFA /* CampeoesdaCopaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampeoesdaCopaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E47032020CED0FD00E71EFA /* CampeoesdaCopaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampeoesdaCopaUITests.swift; sourceTree = "<group>"; };
 		6E47032220CED0FD00E71EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E47032F20CED19E00E71EFA /* Bandeiras */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Bandeiras; path = "../../Arquivos CampeoesDaCopa/Bandeiras"; sourceTree = "<group>"; };
+		6E47033320CED23F00E71EFA /* WinnersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersTableViewController.swift; sourceTree = "<group>"; };
+		6E47033520CED25900E71EFA /* WordlCupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordlCupViewController.swift; sourceTree = "<group>"; };
+		6E47033820CED29600E71EFA /* WorldCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +105,12 @@
 		6E4702FC20CED0FA00E71EFA /* CampeoesdaCopa */ = {
 			isa = PBXGroup;
 			children = (
+				6E47032F20CED19E00E71EFA /* Bandeiras */,
 				6E4702FD20CED0FA00E71EFA /* AppDelegate.swift */,
-				6E4702FF20CED0FA00E71EFA /* ViewController.swift */,
-				6E47030120CED0FA00E71EFA /* Main.storyboard */,
+				6E47033720CED27000E71EFA /* Models */,
+				6E47033220CED1F100E71EFA /* Controllers */,
+				6E47033120CED1AC00E71EFA /* Views */,
 				6E47030720CED0FD00E71EFA /* Assets.xcassets */,
-				6E47030920CED0FD00E71EFA /* LaunchScreen.storyboard */,
 				6E47030C20CED0FD00E71EFA /* Info.plist */,
 				6E47030420CED0FA00E71EFA /* CampeoesdaCopa.xcdatamodeld */,
 			);
@@ -126,6 +133,32 @@
 				6E47032220CED0FD00E71EFA /* Info.plist */,
 			);
 			path = CampeoesdaCopaUITests;
+			sourceTree = "<group>";
+		};
+		6E47033120CED1AC00E71EFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E47030920CED0FD00E71EFA /* LaunchScreen.storyboard */,
+				6E47030120CED0FA00E71EFA /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E47033220CED1F100E71EFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E47033320CED23F00E71EFA /* WinnersTableViewController.swift */,
+				6E47033520CED25900E71EFA /* WordlCupViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E47033720CED27000E71EFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E47033820CED29600E71EFA /* WorldCup.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +267,7 @@
 			files = (
 				6E47030B20CED0FD00E71EFA /* LaunchScreen.storyboard in Resources */,
 				6E47030820CED0FD00E71EFA /* Assets.xcassets in Resources */,
+				6E47033020CED19E00E71EFA /* Bandeiras in Resources */,
 				6E47030320CED0FA00E71EFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E47030020CED0FA00E71EFA /* ViewController.swift in Sources */,
+				6E47033420CED23F00E71EFA /* WinnersTableViewController.swift in Sources */,
 				6E47030620CED0FA00E71EFA /* CampeoesdaCopa.xcdatamodeld in Sources */,
+				6E47033920CED29600E71EFA /* WorldCup.swift in Sources */,
+				6E47033620CED25900E71EFA /* WordlCupViewController.swift in Sources */,
 				6E4702FE20CED0FA00E71EFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
