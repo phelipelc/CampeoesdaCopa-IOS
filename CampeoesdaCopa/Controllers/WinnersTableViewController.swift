@@ -29,6 +29,11 @@ class WinnersTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! WorldCupViewController
+        let worldCup = worldCups[(tableView.indexPathForSelectedRow?.row)!]
+        vc.worldCup = worldCup
+    }
 
     // MARK: - Table view data source
 
@@ -44,12 +49,10 @@ class WinnersTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WorldCupTableViewCell
 
         let worldcup = worldCups[indexPath.row]
-        cell.textLabel?.text = "Copa \(worldcup.year) - \(worldcup.country)"
-        cell.detailTextLabel?.text = "\(worldcup.winner) vs \(worldcup.vice)"
-        cell.imageView?.image = UIImage(named: "\(worldcup.winner).png")
+        cell.prepare(with: worldcup)
         return cell
     }
     
