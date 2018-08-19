@@ -68,6 +68,7 @@
 		6ED56EC22126176D0086866C /* México.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED56E912126176C0086866C /* México.png */; };
 		6ED56EC32126176D0086866C /* Tchecoslováquia.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED56E922126176D0086866C /* Tchecoslováquia.png */; };
 		6ED56EC52126178B0086866C /* winners.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ED56EC42126178A0086866C /* winners.json */; };
+		6ED56EC721291C850086866C /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED56EC621291C850086866C /* GamesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,7 @@
 		6ED56E912126176C0086866C /* México.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "México.png"; path = "../../../../../Desktop/iCloud Drive (Archive)/Documents/Arquivos CampeoesDaCopa/Bandeiras/México.png"; sourceTree = "<group>"; };
 		6ED56E922126176D0086866C /* Tchecoslováquia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tchecoslováquia.png"; path = "../../../../../Desktop/iCloud Drive (Archive)/Documents/Arquivos CampeoesDaCopa/Bandeiras/Tchecoslováquia.png"; sourceTree = "<group>"; };
 		6ED56EC42126178A0086866C /* winners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = winners.json; path = "../../../../../Desktop/iCloud Drive (Archive)/Documents/Arquivos CampeoesDaCopa/winners.json"; sourceTree = "<group>"; };
+		6ED56EC621291C850086866C /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 		6E47033220CED1F100E71EFA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6ED56EC621291C850086866C /* GamesTableViewCell.swift */,
 				6E47033320CED23F00E71EFA /* WinnersTableViewController.swift */,
 				6E47033520CED25900E71EFA /* WorldCupViewController.swift */,
 				6E47039F20CFFDAE00E71EFA /* WorldCupTableViewCell.swift */,
@@ -503,6 +506,7 @@
 				6E47033420CED23F00E71EFA /* WinnersTableViewController.swift in Sources */,
 				6E47030620CED0FA00E71EFA /* CampeoesdaCopa.xcdatamodeld in Sources */,
 				6E47033920CED29600E71EFA /* WorldCup.swift in Sources */,
+				6ED56EC721291C850086866C /* GamesTableViewCell.swift in Sources */,
 				6E4703A020CFFDAE00E71EFA /* WorldCupTableViewCell.swift in Sources */,
 				6E47033620CED25900E71EFA /* WorldCupViewController.swift in Sources */,
 				6E4702FE20CED0FA00E71EFA /* AppDelegate.swift in Sources */,

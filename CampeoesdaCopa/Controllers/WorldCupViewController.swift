@@ -17,6 +17,7 @@ class WorldCupViewController: UIViewController {
     @IBOutlet weak var lbWinner: UILabel!
     @IBOutlet weak var lbVice: UILabel!
     @IBOutlet weak var lbScore: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,21 +29,31 @@ class WorldCupViewController: UIViewController {
         lbVice.text = worldCup.vice
         lbScore.text = "\(worldCup.winnerScore) x \(worldCup.viceScore)"
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension WorldCupViewController: UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return worldCup.matches.count
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let games = worldCup.matches[section].games
+        return games.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GamesTableViewCell
+        let matches = worldCup.matches[indexPath.section]
+        let games = matches.games[indexPath.row]
+        
+        cell.prepare(with: games)
+        
+        return cell
     }
-    */
-
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let matches = worldCup.matches[section]
+        return matches.stage
+    }
+}
+extension WorldCupViewController: UITableViewDelegate{
+    
 }
