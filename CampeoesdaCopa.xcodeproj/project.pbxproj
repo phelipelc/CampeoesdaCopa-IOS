@@ -316,8 +316,7 @@
 				6E9229242229AFD1001179DD /* União Soviética.png */,
 				6E9229112229AFCE001179DD /* Uruguai.png */,
 			);
-			name = Files;
-			path = "New Group";
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
